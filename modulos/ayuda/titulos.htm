@@ -1,0 +1,50 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<title>P&aacute;gina de ayuda</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+
+<script language="JavaScript">
+function cerrar(){
+if (window.opener) {
+	if(!window.opener.closed) {
+	//	window.opener.redim_ventana();
+		 window.opener.top.resizeBy(valor,0); 
+}
+}
+self.close();
+}
+</script>
+</head>
+<!--#1254C2-->
+
+<body bgcolor="#A6BAD1" link="#000000" vlink="#000000" alink="#000000" onUnload="cerrar()" marginheight="0" marginwidth="0">
+<div align="center">
+<script language="JavaScript">
+//calcula el valor que achica la pantalla
+//que es el mismo que se calcula en el archivo que llama a la ayuda
+var winW=window.screen.Width;
+var valor=(winW*25)/100;
+var script_name = document.location.pathname;
+var html_root;
+	if (script_name.indexOf('/modulos'))
+		html_root = script_name.substring(0,script_name.indexOf('/modulos'));
+	else if (script_name.indexOf('/lib'))
+		html_root = script_name.substring(0,script_name.indexOf('/lib'));
+ document.write("<img src='" + html_root + "/imagenes/logo_coradir.jpg' alt='' border='2' >");
+</script>
+ </div>
+ 
+  <center>
+  <br>
+   <strong><font color="#000000" size="3+" face="ARIAL"><span id=titulo></span></font></strong> 
+   <br>
+   <br>
+   </center>
+
+<iframe name='frame1' height="75%" allowtransparency=true marginheight="0" marginwidth="0" scrolling="auto" width="100%" frameborder="0" src="pagina.htm"></iframe>
+<br>
+<br>    
+<p>&nbsp;</p>
+</body>
+</html>

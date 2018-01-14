@@ -1,0 +1,26 @@
+-- Table: autogestion.financiador
+
+-- DROP TABLE autogestion.financiador;
+
+CREATE TABLE autogestion.financiador
+(
+  id_financiador serial NOT NULL,
+  nom_financer character varying(250) NOT NULL,
+  telefono character varying(100),
+  tel_fax character varying(100),
+  direccion character varying(250),
+  provincia character varying(150),
+  localidad character varying(150),
+  cp integer,
+  sigla character varying(250),
+  cuit character varying(40),
+  ins_sss character(4),
+  d_vfact character varying(250),
+  d_envio character varying(250),
+  code integer,
+  CONSTRAINT financiador_pkey PRIMARY KEY (id_financiador)
+)
+WITH (
+  OIDS=FALSE
+);
+ALTER TABLE autogestion.financiador OWNER TO postgres;

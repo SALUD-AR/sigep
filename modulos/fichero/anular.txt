@@ -1,0 +1,5 @@
+-- Column: anular
+
+-- ALTER TABLE fichero.fichero DROP COLUMN anular;
+
+ALTER TABLE fichero.fichero ADD COLUMN anular character(4);

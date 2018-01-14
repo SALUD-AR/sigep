@@ -1,0 +1,192 @@
+/*button text - all levels*/
+#xpstyle .menuButtonSecond td, #xpstyle .menuButton td, #xpstyle .menuButtondown td,#xpstyle .menuButtonover td {
+	cursor:default;
+}
+/*menu text - all levels*/
+#xpstyle .estilo_fila{
+	font: 10px Tahoma,Arial;
+	color: white;
+	padding:0.5px;
+	font-weight: bold;
+	letter-spacing : 0.5px;	
+}
+#xpstyle .estilo_fila_img{
+	font: 11px Tahoma,Arial;
+	color: white;
+	padding:0.5px;
+	font-weight: bold;
+	letter-spacing : 0.5px;	
+	/*background:url(../imagenes/ayuda.gif) no-repeat right center;*/
+	padding-right:16px;
+}
+
+#xpstyle .defaultMenuText{
+	font: 11px Tahoma,Arial;
+	color: #3D3D3D;
+	padding: 1px;
+	font-weight: bold;
+	letter-spacing : 0.5px;	
+}
+/*menu caption if any*/
+#xpstyle .menuName{
+	color : gray;
+	letter-spacing : 7px;
+	font : 11px Arial,sans-serif;
+	padding-left : 10px;
+	padding-right : 10px;
+}
+/*========= BUTTONS ======================*/
+
+/*plain button state - top level*/
+#xpstyle .menuButton {
+	border : solid 1px #637279;  /*#ece9d8   borde de cada menu*/ 
+}
+/*down button state - top level*/
+#xpstyle .menuButtondown {
+	background-color :  white; /* #316ac5;*/  /*cuando selecciona el menu */
+    border: solid 1px  white;  /* #316ac5;*/
+	color: #C84B29;
+	cursor : default;
+}
+/*mouse over button state - top level*/
+#xpstyle .menuButtonover {
+	background-color :white; /* 316ac5; cuando pasa mouse por el menu*/
+	border: solid 1px white; /*316ac5;*/
+	color: #C84B29;
+	cursor : default;
+}
+/*text color for pressed and over items - top level*/
+
+
+#xpstyle .menuButtondown .estilo_fila,#xpstyle .menuButtonover .estilo_fila {
+	color: #C84B29; /*  LETRA QUE QUEDA SELECCIONADA EN EL MENU */
+}
+
+/*plain button state - other levels*/
+#xpstyle .menuButtonSecond {
+	background-color:  #C9CED0;         /*white;/*#xD4D0C8*/
+    font:11px Arial,sans-serif;
+	border-bottom: solid 1px white;
+}
+
+/*mouse over button and down button states - other levels*/
+#xpstyle .menuButtonSecondover,#xpstyle .menuButtonSeconddown {
+	background-color : white; /*#C9CED0; */   /*submenu al pasar el mouse*/
+	color: #C84B29;
+	cursor : default;
+	border-bottom: solid 1px #C9CED0;
+	font:11px Arial,sans-serif;
+}
+/*icon place style on button over/down - other levels
+.menuButtonSeconddownimg {
+	background-color : #C9D9F5;
+}*/
+
+/*text of mouse over button - other levels*/
+#xpstyle .menuButtonSeconddown td {
+	 color: #3D3D3D;  /*LETRA AL PASAR EL MOUSE EN SUBMENU*/
+	 cursor:default;
+	 border:0px solid;
+}
+
+
+/*============ PANELS and DEVIDERS ===========================================*/
+
+/*manu panel - top level*/
+
+#xpstyle .menuTable{
+	background-color : #637279; /*#ece9d8;  barra del menu*/
+	border-bottom : solid #808080 1px;
+	border-left : solid #FFFFFF 1px;
+	border-right : solid #808080 1px;
+	border-top : solid #637279 1px;  /*borde de arriba del menu*/
+	margin : 0px;
+	-moz-user-select : none;
+	padding : 0px;
+
+}
+
+/*menu panel - other levels*/
+#xpstyle .secondMenuTable{
+	background-color : #3D3D3D;
+	margin : 0px;
+	-moz-user-select : none;
+	margin-top:-1px;
+	padding : 0px;
+}
+
+/*devider - horizontal*/
+#xpstyle .menudivider {  /* divisor  del menu*/
+	background-color : #ece9d8;
+	border-left : solid white 1px;
+	border-right : solid white 1px;
+	height : 100%;
+	margin-bottom : 2px;
+	margin-top : 1px;
+	overflow : hidden;
+	vertical-align : middle;
+	width : 2px;
+}
+
+
+
+/*devider - vertical*/
+#xpstyle .menudividery {
+	background-color : #ece9d8;
+	border-bottom : solid #FFFFFF 1px;
+	border-top : solid #808080 1px;
+	height : 2px;
+	overflow : hidden;
+	width : 100%;
+}
+
+
+
+/*================== DRAG HANDLERS ==================*/
+
+/*drag handler for menu - horizontal*/
+#xpstyle .menuhandle {
+	background-color : #ece9d8;
+	border-bottom : solid #808080 1px;
+	border-left : solid #FFFFFF 1px;
+	border-right : solid #808080 1px;
+	border-top : solid #FFFFFF 1px;
+	cursor : move;
+	height : 100%;
+	overflow : hidden;
+	width : 3px;
+}
+
+/*drag handler for menu - vertical*/
+#xpstyle .vmenuhandle {
+	background-color : #ece9d8;
+	border-bottom : solid #808080 1px;
+	border-left : solid #FFFFFF 1px;
+	border-right : solid #808080 1px;
+	border-top : solid #FFFFFF 1px;
+	cursor : move;
+	height : 3px;
+}
+
+/*============ ICONS and SCROLLERS ====================*/
+
+/*disabled icon - all levels*/
+#xpstyle .iconGray {
+	filter : BlendTrans(Percent=50) gray(); 
+	cursor: default; 
+	border:solid 1px #ece9d8;
+}
+
+/*enabled scroller*/
+#xpstyle .menuscrollerenabled{
+	background-color:#CAC8D4;
+	cursor: pointer;	
+	text-align:center;
+}
+/*disabled scroller*/
+#xpstyle .menuscrollerdisabled{
+	background-color: #CAC8D4;
+	cursor: default;
+	visibility:hidden;
+	text-align:center;
+}
